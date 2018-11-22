@@ -8,10 +8,12 @@ Gehri is in progress project using python, django and postgresql database.
  
  ## Running the app,
  * To run server
- in your project directory where manage.py file is held, type
- @@python manage.py runserver
+ in your project directory where manage.py file is held type, 
+ 
+ python manage.py runserver
  
  ## For database migraitions 
+ 
  python manage.py makemigrations
  python manage.py migrate
  
