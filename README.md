@@ -14,6 +14,6 @@ Gehri is in progress project using python, django and postgresql database.
  
  ## For database migraitions 
  
- python manage.py makemigrations
- python manage.py migrate
+ *python manage.py makemigrations
+ *python manage.py migrate
  
