@@ -1,0 +1,14 @@
+
+{% if latest_production_list %}
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<h1> Choose a Company </h1>
+<select class = "form-control">
+	{% for q in latest_production_list %}
+		<option>{{ q }}</option>
+	{% endfor %}
+</select>
+{% else %}
+    <p>No Gehris are available.</p>
+{% endif %}
