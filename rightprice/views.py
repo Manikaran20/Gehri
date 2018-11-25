@@ -13,5 +13,11 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
     	return Production.objects.order_by('pub_date')
-   
+
+def Detail(request):
+	latest_production_list = Production.objects.all()
+	return render(request, 'rightprice/car.html', {'latest_production_list':latest_production_list})
+
+	
+	
 
