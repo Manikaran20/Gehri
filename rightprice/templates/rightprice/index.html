@@ -1,9 +1,18 @@
-<div class = "container">
-<h1>Welcome to Rightprice</h1>
-<p>What are you looking for?</p>
-<link rel="stylesheet" 
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<a class="btn btn-danger" href="{% url 'rightprice:Car' %}" role="button">Buying a Car</a> 
-<a class="btn btn-default" href="{% url 'rightprice:House' %}" role="button">Buying a House?</a>
-</div>
+{% extends 'base.html' %}
+	<head>
+		{% block head%}
+		{% load static %}
+		<link rel="stylesheet"href="{% static 'rightprice/style.css' %}" type="text/css"></link>
+		{% endblock %}
+	</head>
+	<body>
+		{% block body%}
+		<div class = "container">
+			<h1>Welcome to Rightprice</h1>
+			Welcome! you can find the right price here!
+			<p>What are you looking for?</p>
+		</div>
+	<a class="btn btn-danger" href="{% url 'rightprice:Car' %}" role="button">Buying a Car</a> 
+	<a class="btn btn-default" href="{% url 'rightprice:House' %}" role="button">Buying a House?</a>
+		{% endblock %}
+	</body>
